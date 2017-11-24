@@ -1,0 +1,21 @@
+{
+  "name": "ajv-oai",
+  "version": "1.0.0",
+  "description": "OpenAPI's JsonSchema validator, Powered by Ajv",
+  "main": "lib/ajv-oai.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "openapi",
+    "swagger",
+    "validator",
+    "json-schema",
+    "jsonschema"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ajv": "^5.4.0"
+  }
+}
