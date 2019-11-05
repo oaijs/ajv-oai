@@ -18,9 +18,11 @@
   "author": "bitebit",
   "license": "MIT",
   "dependencies": {
-    "ajv": "^6.1.1",
     "decimal.js": "^9.0.1"
   },
+  "peerDependencies":{
+    "ajv": "6.x",
+  }
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-jest": "^22.1.0",
