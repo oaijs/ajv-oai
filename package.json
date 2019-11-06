@@ -1,6 +1,6 @@
 {
   "name": "ajv-oai",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "OpenAPI's JsonSchema validator, Powered by Ajv",
   "main": "lib/ajv-oai.js",
   "scripts": {
@@ -20,7 +20,7 @@
   "dependencies": {
     "decimal.js": "^9.0.1"
   },
-  "peerDependencies":{
+  "peerDependencies": {
     "ajv": "6.x"
   },
   "devDependencies": {
