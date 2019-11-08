@@ -3,6 +3,7 @@
   "version": "1.1.2",
   "description": "OpenAPI's JsonSchema validator, Powered by Ajv",
   "main": "lib/ajv-oai.js",
+  "typings": "lib/ajv-oai.d.ts",
   "scripts": {
     "ci": "npm run lint && npm run test",
     "test": "jest test",
@@ -24,6 +25,7 @@
     "ajv": "6.x"
   },
   "devDependencies": {
+    "ajv": "6.10.2",
     "babel-core": "^6.26.0",
     "babel-jest": "^22.1.0",
     "babel-preset-env": "^1.6.1",
