@@ -42,10 +42,10 @@ With draft 04 by default:
 const ajv = new AjvOAI();
 ```
 
-With a custom json schema from [AJV lib](https://github.com/epoberezkin/ajv/tree/master/lib/refs)
+With a custom meta schema from [AJV lib](https://github.com/epoberezkin/ajv/tree/master/lib/refs)
 
 ```js
-const ajv = new AjvOAI({ jsonSchema: 'json-schema-draft-06' });
+const ajv = new AjvOAI({ metaSchema: 'json-schema-draft-06' });
 ```
 
 # Example
