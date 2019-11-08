@@ -33,4 +33,14 @@ describe('Use custom meta Schema', () => {
       }),
     ).toBe(true);
   });
+
+  it('should throw an error if meta schema is not supported', async () => {
+    expect(
+      () => new AjvOAI({ metaSchema: 'json-schema-draft-nop-existing' }),
+    ).toThrow(
+      new Error(
+        `Meta schema json-schema-draft-nop-existing not supported. Cannot find module 'ajv/lib/refs/json-schema-draft-nop-existing.json' from 'ajv-oai.js'`,
+      ),
+    );
+  });
 });
