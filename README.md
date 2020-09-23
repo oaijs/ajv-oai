@@ -48,6 +48,18 @@ With a custom meta schema from [AJV lib](https://github.com/epoberezkin/ajv/tree
 const ajv = new AjvOAI({ metaSchema: 'json-schema-draft-06' });
 ```
 
+## Default Options
+`ajv-oai` sets followings as ajv's default options, you can override this options as need.
+```js
+{
+      schemaId: 'auto',
+      format: 'full',
+      coerceTypes: true,
+      unknownFormats: 'ignore',
+      useDefaults: true,
+}
+```
+
 # Example
 
 ```js
