@@ -4,15 +4,15 @@
 [node-url]: http://nodejs.org/download/
 [npm-img]: https://img.shields.io/npm/v/ajv-oai.svg
 [npm-url]: https://npmjs.org/package/ajv-oai
-[travis-img]: https://travis-ci.org/amazing-gao/ajv-oai.svg
-[travis-url]: https://travis-ci.org/amazing-gao/ajv-oai
-[coveralls-img]: https://coveralls.io/repos/github/amazing-gao/ajv-oai/badge.svg
-[coveralls-url]: https://coveralls.io/github/amazing-gao/ajv-oai
+[travis-img]: https://travis-ci.org/oaijs/ajv-oai.svg
+[travis-url]: https://travis-ci.org/oaijs/ajv-oai
+[coveralls-img]: https://coveralls.io/repos/github/oaijs/ajv-oai/badge.svg
+[coveralls-url]: https://coveralls.io/github/oaijs/ajv-oai
 [downloads-image]: https://img.shields.io/npm/dm/ajv-oai.svg
 [downloads-url]: https://npmjs.org/package/ajv-oai
-[david-img]: https://img.shields.io/david/amazing-gao/ajv-oai.svg
-[david-url]: https://david-dm.org/amazing-gao/ajv-oai
-[router]: https://github.com/amazing-gao/koa-oai-router
+[david-img]: https://img.shields.io/david/oaijs/ajv-oai.svg
+[david-url]: https://david-dm.org/oaijs/ajv-oai
+[router]: https://github.com/oaijs/koa-oai-router
 
 [![License][license-img]][license-url]
 [![Node Version][node-image]][node-url]
