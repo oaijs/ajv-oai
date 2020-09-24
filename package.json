@@ -1,6 +1,6 @@
 {
   "name": "ajv-oai",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "OpenAPI's JsonSchema validator, Powered by Ajv",
   "main": "lib/ajv-oai.js",
   "typings": "lib/ajv-oai.d.ts",
