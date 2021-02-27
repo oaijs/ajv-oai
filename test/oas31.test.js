@@ -3,7 +3,7 @@ const { AjvOAI, loadSchema } = require('./helpers');
 
 describe('OpenAPI 3.1 break changes', () => {
   it('valid should be ok', async () => {
-    const ajvoai = new AjvOAI({ oasVer: '3.1', loadSchema });
+    const ajvoai = new AjvOAI({ oasVer: '3.1' });
 
     expect(ajvoai.compile({ type: 'string' })(null)).toBe(false);
     expect(ajvoai.compile({ type: ['string', 'null'] })(null)).toBe(true);

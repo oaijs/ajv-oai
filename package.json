@@ -9,6 +9,9 @@
     "test": "jest test",
     "lint": "node_modules/.bin/eslint lib"
   },
+  "engines": {
+    "node": ">=10"
+  },
   "keywords": [
     "openapi",
     "swagger",
@@ -24,9 +27,6 @@
     "json-schema-migrate": "^1.1.0"
   },
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-jest": "^22.1.0",
-    "babel-preset-env": "^1.6.1",
     "eslint": "^4.16.0",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.8.0",
