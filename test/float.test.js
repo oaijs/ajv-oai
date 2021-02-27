@@ -5,14 +5,14 @@ describe('float', () => {
     const ajv = new AjvOAI();
     const validator = ajv.compile({ type: 'number', format: 'float' });
 
-    expect(validator('3.4E+38')).toBe(true);
+    expect(validator(3.4E+38)).toBe(true);
     expect(validator(-9234234)).toBe(true);
     expect(validator(0)).toBe(true);
     expect(validator(1)).toBe(true);
     expect(validator(1.0)).toBe(true);
     expect(validator(999)).toBe(true);
     expect(validator(912312399)).toBe(true);
-    expect(validator('-3.4E+38')).toBe(true);
+    expect(validator(-3.4E+38)).toBe(true);
   });
 
   it('float and out of range, should be false', async () => {

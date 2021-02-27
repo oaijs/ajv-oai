@@ -5,14 +5,14 @@ describe('double', () => {
     const ajv = new AjvOAI();
     const validator = ajv.compile({ type: 'number', format: 'double' });
 
-    expect(validator('3.4E+39')).toBe(true);
+    expect(validator(3.4E+39)).toBe(true);
     expect(validator(-9234234)).toBe(true);
     expect(validator(0)).toBe(true);
     expect(validator(1)).toBe(true);
     expect(validator(1.0)).toBe(true);
     expect(validator(999)).toBe(true);
     expect(validator(912312399)).toBe(true);
-    expect(validator('-3.4E+39')).toBe(true);
+    expect(validator(-3.4E+39)).toBe(true);
   });
 
   it('double and out of range, should be false', async () => {

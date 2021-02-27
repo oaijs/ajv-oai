@@ -2,7 +2,7 @@ const { AjvOAI } = require('./helpers');
 
 describe('issues#9', () => {
   it('valid should be ok', async () => {
-    const ajvoai = new AjvOAI({ coerceTypes: false, nullable: true });
+    const ajvoai = new AjvOAI({ coerceTypes: false });
 
     expect(ajvoai.compile({ type: 'number' })('42')).toBe(false);
     expect(ajvoai.compile({ type: 'string' })(42)).toBe(false);
