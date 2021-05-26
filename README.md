@@ -1,6 +1,6 @@
 [license-img]: http://img.shields.io/badge/license-MIT-green.svg
 [license-url]: http://opensource.org/licenses/MIT
-[node-image]: https://img.shields.io/badge/node.js-v6.0.0-blue.svg
+[node-image]: https://img.shields.io/badge/node.js-v10.0.0-blue.svg
 [node-url]: http://nodejs.org/download/
 [npm-img]: https://img.shields.io/npm/v/ajv-oai.svg
 [npm-url]: https://npmjs.org/package/ajv-oai
@@ -36,29 +36,33 @@ npm install ajv-oai --save
 
 # Usage
 
-With draft 04 by default:
+## OpenAPI v3.1
 
 ```js
-const ajv = new AjvOAI();
+const ajv = new AjvOAI({ oasVer: '3.1' });
 ```
 
-With a custom meta schema from [AJV lib](https://github.com/epoberezkin/ajv/tree/master/lib/refs)
-
+## OpenAPI v3.0 or v2.0
 ```js
-const ajv = new AjvOAI({ metaSchema: 'json-schema-draft-06' });
+const ajv = new AjvOAI();
+
+// OR
+const ajv = new AjvOAI({oasVer: '2.0'});
 ```
 
 ## Default Options
 `ajv-oai` sets followings as ajv's default options, you can override this options as need.
 ```js
 {
-      schemaId: 'auto',
-      format: 'full',
-      coerceTypes: true,
-      unknownFormats: 'ignore',
-      useDefaults: true,
+  coerceTypes: false,
+  useDefaults: true,
 }
 ```
+
+## Tips
+
+`BigInt` is not supported by `ajv`, so `int64` validation will be invalid when value is too big or too small. You can get more info from [Should 'integer' type validate bigint ? ](https://github.com/ajv-validator/ajv/issues/1116)
+
 
 # Example
 
